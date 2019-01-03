@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    # Allow any request for CSS, JS and images straight through...
+    RewriteRule .\.(css|js|jpe?g|png|gif) - [L]
+
+    # Don't rewrite files or directories
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Rewrite everything else to index.html
+    #to all html5 state links
+    RewriteRule ^ index.html [L]
+</IfModule>
