@@ -47,8 +47,7 @@ import {environment} from '../environments/environment.prod';
     ToastModule.forRoot(),
     MDBBootstrapModulesPro.forRoot(),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAlt3H6wDqR7tmCDEm95BtGoSqyUC1FBlo'
-      // 'AIzaSyBewjW73ph7ttbEMkkPi2k-8AMyooqdAlE'
+      apiKey: 'private_key'
     }),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule.enablePersistence()
