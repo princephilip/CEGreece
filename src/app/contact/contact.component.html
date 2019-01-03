@@ -1,0 +1,128 @@
+<!-- Section: Contact v.3 -->
+<section class="contact-section my-5 pt-5 container contact">
+
+    <!-- Form with header -->
+<mdb-card>
+  <!-- Grid row -->
+  <div class="row">
+  
+    <!-- Contact Details column -->
+<div class="col-lg-8 px-5" title="Christ Embassy Greece : Contact Us">
+
+    <mdb-card-body class="px-lg-5 p-1">
+        <h4 class="mt-4  text-success align-center" *ngIf="submitted" >
+          <i class="fa fa-envelope pr-2"></i>&nbsp;Thank you !!<br> Your information has been submitted
+        </h4>
+      <!------- ---------------- form -->
+
+    <form class="text-center" [formGroup]="contactForm" (ngSubmit)="onSubmit()" *ngIf="!submitted">
+      <!-- Heading -->
+      <h3 class="mt-4">
+          <i class="fa fa-envelope pr-2"></i>We'd love to hear from you!
+      </h3>
+      <!-- /Heading end -->
+      <!-- name -->
+      <div class="md-form mt-3">
+        <input type="text" formControlName="name" id="Name" 
+                maxlength="30" minlength="3" class="form-control" 
+                mdbInputDirective data-error="please enter your name" data-success=" ">
+        <label for="Name">Your Name<span class="red-text">*</span></label>
+      </div>
+
+      <!-- email -->
+      <div class="md-form">
+        <input type="email" formControlName="email" id="Email" maxlength="35" 
+        class="form-control" mdbInputDirective data-error="a valid email is required" data-success=" ">
+        <label for="Email">Your Email<span class="red-text">*</span></label>
+      </div>
+
+      <!-- country of residence -->
+      <div class="md-form">
+        <input type="text" formControlName="country" id="Country" 
+            minlength="3" maxlength="25" class="form-control"
+            mdbInputDirective data-error="country is required" data-success=" ">
+        <label for="Country">Country of Residence<span class="red-text">*</span></label>
+      </div>
+     
+      <!-- phone -->
+      <div class="md-form">
+        <input type="tel" formControlName="phone" id="Phone" minlength="10" maxlength="15"
+        class="form-control" mdbInputDirective data-error="a valid phone is required" data-success=" ">
+        <label for="Phone">Phone<span class="red-text">*</span></label>
+      </div>
+
+      <!-- Subject -->
+      <div class="md-form">
+          <mdb-select formControlName="subject" [options]="reasonsSelect" 
+            placeholder="Reason for contacting us *" data-error=" " data-success=" ">
+          </mdb-select>
+      </div>
+
+      <!-- message -->
+      <div class="md-form">
+        <textarea type="text" formControlName="message" id="Message" class="form-control md-textarea"
+          mdbInputDirective data-error="please write a message" data-success=" " minlength="5" maxlength="350"></textarea>
+        <label for="Message">Message<span class="red-text">*</span></label>
+      </div>
+
+      <!-- Submit button -->
+      <button mdbBtn type="submit" color="primary" rounded="true"  mdbWavesEffect
+            [disabled]="contactForm.invalid">
+            Send
+      </button>
+
+    </form>
+    <!-----form end -->
+
+  </mdb-card-body>
+</div>
+<!-- / Contact Details column -->
+  
+        <!-- Contact information column -->
+        <div class="col-lg-4">
+          <div class="card-body contact text-center h-100 white-text">
+  
+            <h3 class="my-4 pb-2">Contact information</h3>
+            <ul class="text-lg-left list-unstyled ml-4">
+              <li>
+                <p>
+                  <i class="fa fa-map-marker pr-2"></i>Acharnon 155, 94126, Athens, Greece</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa fa-phone pr-2"></i> + 30 697 346 4742</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa fa-envelope pr-2"></i>christembassygreece@gmail.com</p>
+              </li>
+            </ul>
+            <hr class="hr-light my-4">
+            <ul class="list-inline text-center list-unstyled">
+              <li class="list-inline-item">
+                <a class="p-2 fa-lg tw-ic" href="https://www.facebook.com/CHRISTEMBASSYGREECE/" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="p-2 fa-lg li-ic" href="https://www.facebook.com/CHRISTEMBASSYGREECE/" target="_blank">
+                  <i class="fa fa-linkedin"> </i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="p-2 fa-lg ins-ic" href="https://www.facebook.com/CHRISTEMBASSYGREECE/" target="_blank">
+                  <i class="fa fa-instagram"> </i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+        <!-- Contact information column -->
+      </div>
+      <!-- Grid row -->
+    </mdb-card>
+    <!-- Form with header -->
+  </section>
+  <!-- Section: Contact v.3 -->
+

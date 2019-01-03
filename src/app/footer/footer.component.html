@@ -1,0 +1,56 @@
+<!-- Footer -->
+<footer class="page-footer font-large mdb-color pt-2 mdb-color darken-3">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Map column -->
+      <div class="col-md-6 col-lg-6 col-xl-7 mx-auto pt-1">
+        <!-- mapp code here -->
+        <agm-map [latitude]="map.lat" [longitude]="map.lng" style="height: 250px">
+          <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
+        </agm-map>
+      </div>
+      <!-- Map column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto pt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Service Times</h6>
+        <p>SUNDAY @ 10am</p>
+        <p>WEDNESSDAY @ 7pm</p>
+       
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto pt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <mdb-icon icon="home" class="mr-1"></mdb-icon> Acharnon 155, 104 46, Athens
+        </p>
+        <p>
+          <mdb-icon icon="envelope" class="mr-1"></mdb-icon> christembassygreece@gmail.com
+        </p>
+        <p>
+          <mdb-icon icon="phone" class="mr-1"></mdb-icon> + 30 697 346 4742
+        </p>
+       
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+    <hr>
+      <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://www.christembassygreece.gr"> christembassygreece.gr</a>
+      </div>
+      <!-- Copyright -->
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->

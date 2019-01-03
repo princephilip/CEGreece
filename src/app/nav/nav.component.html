@@ -1,0 +1,53 @@
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark blue-gradient scrolling-navbar ie-nav"
+     [containerInside]="true" >
+  <mdb-navbar-brand>
+      <a class="logo navbar-brand" [routerLink]="[ '/' ]">
+        <img src="assets/img/logo.png" alt="Christ Embassy Greece" height="" class="img-fluid">
+    </a>
+  </mdb-navbar-brand>
+<br>
+  <links>
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item waves-light" mdbWavesEffect routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <a [routerLink]="[ '/' ]" class="nav-link" title="Christ Embassy Greece - HOME">HOME</a>
+          </li>
+           <!-- Dropdown -->
+           <li class="nav-item dropdown" dropdown [routerLinkActiveOptions]="{exact: true}">
+            <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
+             mdbWavesEffect title="Christ Embassy Greece - WELCOME">
+            WELCOME <span class="caret"></span></a>
+            <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="[ '/worship-with-us' ]" [routerLinkActiveOptions]="{exact: true}" title="Christ Embassy Greece - WORSHIP WITH US">Worship With Us</a>
+                <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="[ '/meet-pastor-chris' ]" [routerLinkActiveOptions]="{exact: true}" title="Christ Embassy Greece - MEET PASTOR CHRIS">Meet Pastor Chris</a>
+                <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="[ '/our-ministry' ]" [routerLinkActiveOptions]="{exact: true}" title="Christ Embassy Greece - OUR MINISTRY">Our Ministry</a>
+            </div>
+        </li>
+          <li class="nav-item waves-light" mdbWavesEffect routerLinkActive="active">
+              <a [routerLink]="[ '/ror' ]" class="nav-link" >RHAPSODY OF REALITIES</a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect routerLinkActive="active">
+            <a [routerLink]="[ '/media' ]"  class="nav-link">MEDIA</a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect routerLinkActive="active">
+            <a [routerLink]="[ '/online-church' ]" class="nav-link">ONLINE CHURCH</a>
+        </li>
+          <li class="nav-item waves-light" mdbWavesEffect routerLinkActive="active">
+              <a [routerLink]="[ '/contact' ]"  class="nav-link">CONTACT US</a>
+          </li>
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link" href="https://www.facebook.com/CHRISTEMBASSYGREECE/" target="_blank">
+                <i class="fa fa-facebook wow rotateIn" data-wow-delay="0.5s"></i></a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link" href="https://www.facebook.com/CHRISTEMBASSYGREECE/" target="_blank">
+                <i class="fa fa-twitter wow rotateIn" data-wow-delay="0.5s"></i></a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link" href="https://www.facebook.com/CHRISTEMBASSYGREECE/" target="_blank">
+                <i class="fa fa-instagram wow rotateIn" data-wow-delay="0.5s"></i></a>
+          </li>
+      </ul>
+  </links>
+</mdb-navbar>

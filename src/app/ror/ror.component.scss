@@ -1,0 +1,15 @@
+img{
+    max-width:100%; 
+    height:auto
+}
+
+.head-img{
+    background-color: #4631a5
+}
+
+@media (min-width: 700px){
+   div > img{
+       padding-top: -2rem;
+       margin-top: -2rem
+   }
+}

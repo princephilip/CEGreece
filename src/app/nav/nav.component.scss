@@ -1,0 +1,22 @@
+// .dropdown-item a:hover{
+//     background-color: #039be5;
+// }
+// // .nav-item a:visited, a:link {
+// //     color: #607D8B;
+// //   }
+//   .nav-item  a:hover {
+//     color: #CFD8DC;
+//     background-color: #039ae51f;
+//   }
+   .nav-item.active {
+    background-color: #075dce7a;
+  } 
+li .waves-light:hover {
+        background-color: #075dce9b; 
+        color: white;
+}
+
+.dropdown-item:hover, .dropdown-item.active {
+    background-color: #07a4f3ad; 
+    color:white;
+}
